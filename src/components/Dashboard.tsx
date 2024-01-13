@@ -5,7 +5,7 @@ import {
     ToggleButton,
     Field,
     FieldRobot,
-    Field3d,
+    Field3d, Field3dObject,
 } from "@frc-web-components/react";
 import MyElement from "./MyElement";
 import {CSSProperties} from "react";
@@ -50,7 +50,9 @@ const Dashboard = () => {
             >
                 <FieldRobot color="blue" opacity={1} pose={pose}/>
             </Field>
-            <Field3d></Field3d>
+            <Field3d>
+                <Field3dObject name="KitBot" translation={[0,0,0]} rotation={[0,0,0,0]} />
+            </Field3d>
         </>
     );
 };
