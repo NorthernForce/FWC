@@ -2,22 +2,16 @@ import {
     useEntry,
     BasicFmsInfo,
     SendableChooser,
-    ToggleButton,
     Field,
     FieldRobot,
     Field3d, Field3dObject,
 } from "@frc-web-components/react";
-import MyElement from "./MyElement";
+
 import {CSSProperties} from "react";
 
 const Dashboard = () => {
-    const [toggled, setToggled] = useEntry("/dashboard/toggled", false);
     const [pose] = useEntry("/SmartDashboard/Field/Robot", [0, 0, 0]);
-    const [count, setCount] = useEntry("/dashboard/count", 0);
 
-    const updateToggle = () => {
-        setToggled(!toggled);
-    };
 
     const divStyles: CSSProperties = {
         display: "flex",
@@ -35,12 +29,6 @@ const Dashboard = () => {
             <div style={divStyles}>
                 <SendableChooser source-key="/Shuffleboard/Autonomous/SendableChooser[0]"/>
                 <BasicFmsInfo source-key="/FMSInfo"/>
-                <ToggleButton
-                    label="Toggle Button"
-                    toggled={toggled}
-                    ontoggle={updateToggle}
-                />
-                <MyElement count={count} onIncrement={(value) => setCount(value)}/>
             </div>
             <Field
                 style={fieldStyles}
@@ -50,8 +38,8 @@ const Dashboard = () => {
             >
                 <FieldRobot color="blue" opacity={1} pose={pose}/>
             </Field>
-            <Field3d>
-                <Field3dObject name="KitBot" translation={[0,0,0]} rotation={[0,0,0,0]} />
+            <Field3d origin="blue">
+                <Field3dObject name="KitBot" translation={[1,2,0]} rotation={[0,0,0,0]} />
             </Field3d>
         </>
     );
