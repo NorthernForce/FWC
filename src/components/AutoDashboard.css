@@ -1,0 +1,20 @@
+.field {
+    position: relative;
+    align-self: center;
+    width: 20%;
+    height: 15%;
+}
+.auto-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.autonomous-chooser-container
+{
+    flex: 100%;
+}
+.autonomous-chooser
+{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
