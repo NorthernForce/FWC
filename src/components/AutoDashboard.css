@@ -1,20 +1,36 @@
-.field {
-    position: relative;
-    align-self: center;
-    width: 20%;
-    height: 15%;
+.field
+{
+    display: block;
+    width: 70%;
+    height: 30%;
+    margin: 2% auto 0.5%;
 }
-.auto-container {
+.auto-container
+{
+    display: flex;
+    padding: 2%;
+    flex-flow: column wrap;
+}
+.fms-container
+{
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
-.autonomous-chooser-container
+.fms-info
 {
-    flex: 100%;
+    display: block;
+    margin: 2% 5%;
+}
+.alerts
+{
+    display: block;
+    margin: 0 5%;
 }
 .autonomous-chooser
 {
     display: block;
     margin: 0 auto;
-    width: 25%;
+    width: 400px;
 }

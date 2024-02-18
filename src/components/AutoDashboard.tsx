@@ -1,27 +1,27 @@
 import {
-    useEntry,
     BasicFmsInfo,
     SendableChooser,
     Field,
+    NetworkAlerts,
     FieldRobot,
-    NetworkAlerts
+    useEntry
 } from "@frc-web-components/react";
 
 import './AutoDashboard.css';
 
 const AutoDashboard = () => {
-    const [pose] = useEntry("FWC/StartingPose", [0, 0, 0]);
+    const [pose] = useEntry("/FWC/auto_field/Robot", [0, 0, 0])
     return (
         <>
             <div className="auto-container">
-                <div className="autonomous-chooser-container">
-                    <SendableChooser className="autonomous-chooser" source-key="/FWC/AutonomousRoutine"/>
-                </div>
-                <Field className="field" rotationUnit="deg">
-                    <FieldRobot color="blue" opacity={1} pose={pose}/>
+                <SendableChooser className="autonomous-chooser" source-key="/FWC/autonomous"/>
+                <Field className="field" rotationUnit="rad">
+                    <FieldRobot pose={pose}/>
                 </Field>
-                <BasicFmsInfo className="fmsInfo" source-key="/FMSInfo"/>
-                <NetworkAlerts className="alerts" source-key="/FWC/Alerts"/>
+                <div className="fms-container">
+                    <BasicFmsInfo className="fms-info" source-key="/FMSInfo"/>
+                    <NetworkAlerts className="alerts" source-key="/FWC/alerts"/>
+                </div>
             </div>
         </>
     )
