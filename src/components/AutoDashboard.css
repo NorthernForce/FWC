@@ -1,8 +1,8 @@
 .field
 {
     display: block;
-    width: 70%;
-    height: 30%;
+    width: 60%;
+    height: 20%;
     margin: 2% auto 0.5%;
 }
 .auto-container
@@ -15,7 +15,7 @@
 {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 .fms-info
@@ -32,5 +32,5 @@
 {
     display: block;
     margin: 0 auto;
-    width: 400px;
+    width: 10%;
 }
