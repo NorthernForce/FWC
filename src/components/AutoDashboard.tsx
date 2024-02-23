@@ -7,7 +7,7 @@ import {
     useEntry
 } from "@frc-web-components/react";
 
-import './AutoDashboard.css';
+import './css/AutoDashboard.css';
 
 const AutoDashboard = () => {
     const [pose] = useEntry("/FWC/auto_field/Robot", [0, 0, 0])
