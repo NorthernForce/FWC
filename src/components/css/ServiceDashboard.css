@@ -1,0 +1,41 @@
+.service-field
+{
+    display: block;
+    width: 40%;
+    height: 20%;
+    margin: 2% auto 0.5%;
+}
+.service-container
+{
+    display: flex;
+    padding: 2%;
+    flex-flow: column wrap;
+}
+.service-command
+{
+    display: block;
+    width: 10%;
+}
+.service-cameras
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+.service-camera
+{
+    display: block;
+    width: 30%;
+    height: 350px;
+    margin: 2% 1%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.service-camera-stream
+{
+    display: block;
+    width: 100%;
+    margin: auto;
+}

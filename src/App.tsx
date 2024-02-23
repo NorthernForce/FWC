@@ -5,6 +5,7 @@ import {
 import Root from "./routes/root.tsx";
 import Teleop from "./routes/teleop.tsx";
 import Auto from "./routes/auto.tsx";
+import Service from "./routes/service.tsx";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     {
         path: '/auto',
         element: <Auto />
+    },
+    {
+        path: '/service',
+        element: <Service />
     }
 ])
 
