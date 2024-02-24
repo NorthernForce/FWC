@@ -10,10 +10,10 @@ import {
 import './AutoDashboard.css';
 
 const AutoDashboard = () => {
-    const [pose] = useEntry("/FWC/auto_field/Robot", [0, 0, 0])
-    const [infos] = useEntry("/FWC/infos", [])
-    const [warnings] = useEntry("/FWC/warnings", [])
-    const [errors] = useEntry("/FWC/errors", [])
+    let [pose] = useEntry("/FWC/auto_field/Robot", [0, 0, 0])
+    let [infos] = useEntry("/FWC/infos", [])
+    let [warnings] = useEntry("/FWC/warnings", [])
+    let [errors] = useEntry("/FWC/errors", [])
     return (
         <>
             <div className="auto-container">
