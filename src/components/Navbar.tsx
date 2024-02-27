@@ -1,5 +1,6 @@
 import './css/NavbarStyles.css'
 import {Component} from "react";
+import {NavLink} from "react-router-dom";
 
 class Navbar extends Component<{ active: "auto" | "teleop" }> {
     render() {
@@ -7,8 +8,8 @@ class Navbar extends Component<{ active: "auto" | "teleop" }> {
         return (
             <>
                 <ul>
-                    <li><a href="/auto" className={active == "auto" ? "active" : ""}>Auto</a></li>
-                    <li><a href="/teleop" className={active == "teleop" ? "active" : ""}>Teleop</a></li>
+                    <li><NavLink to="/auto" className={active == "auto" ? "active" : ""}>Auto</NavLink></li>
+                    <li><NavLink to="/teleop" className={active == "teleop" ? "active" : ""}>Teleop</NavLink></li>
                 </ul>
             </>
         )

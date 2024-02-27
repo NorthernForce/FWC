@@ -4,7 +4,7 @@ import Dashboard from "../components/Dashboard.tsx";
 export default function Teleop() {
     return (
         <>
-            <Navbar active="teleop"/>
+            <Navbar active={"teleop"}/>
             <div className="main-container">
                 <Dashboard/>
             </div>

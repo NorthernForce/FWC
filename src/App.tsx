@@ -12,11 +12,11 @@ const router = createBrowserRouter([
         element: <Root />
     },
     {
-        path: '/teleop',
+        path: '/teleop/',
         element: <Teleop />
     },
     {
-        path: '/auto',
+        path: '/auto/',
         element: <Auto />
     }
 ])
