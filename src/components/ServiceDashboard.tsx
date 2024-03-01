@@ -1,4 +1,4 @@
-import { Canvas, CanvasMjpgStream, Field, FieldRobot, RobotCommand, useEntry } from '@frc-web-components/react';
+import { Canvas, CanvasMjpgStream, Field, FieldRobot, RobotCommand, SendableChooser, useEntry } from '@frc-web-components/react';
 import './css/ServiceDashboard.css';
 
 const ServiceDashboard = () => {
@@ -8,9 +8,10 @@ const ServiceDashboard = () => {
             <div className="service-container">
                 <div className="command-bar">
                     <RobotCommand name="Calibrate Swerve Drive" className="service-command" source-key="/FWC/calibrate_drive"/>
-                    <RobotCommand name="Play Crab Rave" className="service-command" source-key="/FWC/play_crab_rave"/>
+                    <SendableChooser label="Song To Play" source-key="/FWC/music_selector" />
+                    <RobotCommand name="Play Music" className="service-command" source-key="/FWC/play_music"/>
                 </div>
-                <Field className="service-field" rotationUnit="rad">
+                <Field className="service-field" rotationUnit="deg">
                     <FieldRobot pose={pose}/>
                 </Field>
                 <div className="service-cameras">
