@@ -1,0 +1,43 @@
+.teleContainer {
+    display: grid;
+    grid-template:
+        "a a a" 450px
+        "b c c" 300px
+        / 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+}
+
+.tele-field {
+    grid-area: c;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#camera {
+    grid-area: a;
+    height: 450px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.status-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 10px outset;
+    background-color: white;
+    padding: 5px;
+    height: min-content;
+}
+
+.status-light {
+    aspect-ratio: 1;
+    width: 100%;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+}
+
