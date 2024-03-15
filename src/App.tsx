@@ -2,14 +2,14 @@ import './App.css';
 import {
     createBrowserRouter, RouterProvider,
 } from "react-router-dom";
-import Root from "./routes/root.tsx";
 import Teleop from "./routes/teleop.tsx";
 import Auto from "./routes/auto.tsx";
+import Service from "./routes/service.tsx";
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Root />
+        element: <Teleop />
     },
     {
         path: '/teleop',
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
     {
         path: '/auto',
         element: <Auto />
+    },
+    {
+        path: '/service',
+        element: <Service />
     }
 ])
 

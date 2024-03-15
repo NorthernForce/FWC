@@ -5,7 +5,6 @@
         "b c c" 300px
         / 1fr 1fr 1fr;
     grid-gap: 30px;
-
 }
 
 .tele-field {
@@ -39,5 +38,6 @@
     border: 2px solid black;
     padding: 0;
     margin: 0;
+    height: unset;
 }
 
