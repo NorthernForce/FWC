@@ -101,6 +101,9 @@
     align-content: center;
     align-self: center;
 }
+.service-number-slider {
+    --frc-axis-text-color: white;
+}
 .service-orange-pi-container
 {
     display: block;
