@@ -1,8 +1,8 @@
 .teleContainer {
     display: grid;
     grid-template:
-        "a a a" 450px
-        "b c c" 300px
+        "a a a" 350px
+        "b c c" 275px
         / 1fr 1fr 1fr;
     grid-gap: 30px;
 }
@@ -16,8 +16,8 @@
 
 #camera {
     grid-area: a;
-    height: 450px;
-    width: 800px;
+    height: 350px;
+    width: 622px;
     margin: 0 auto;
 }
 

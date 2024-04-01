@@ -17,7 +17,7 @@ const AutoDashboard = () => {
     return (
         <>
             <div className="auto-container">
-                <SendableChooser className="autonomous-chooser" source-key="/FWC/autonomous"/>
+                <SendableChooser className="autonomous-chooser" source-key="/FWC/autonomous" onchange={() => {}}/>
                 <Field className="field" rotationUnit="deg">
                     <FieldRobot pose={pose}/>
                 </Field>
