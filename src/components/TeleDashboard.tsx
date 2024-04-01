@@ -15,7 +15,7 @@ const TeleDashboard = () => {
     return (
         <div className="teleContainer">
             <Canvas id="camera">
-                <CanvasMjpgStream source-key="FWC/Teleoporated/Camera" />
+                <CanvasMjpgStream source-key="FWC/Teleoporated/Camera" srcs={["http://photonvision.local:1183/stream.mjpg"]}/>
             </Canvas>
             <Field
                 className="tele-field"
